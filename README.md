@@ -1,6 +1,7 @@
 # cypress-code-test
 Automate using Cypress Cucumber Typescript
 Automate https://etherscan.io/ ui tests
+
 Automate https://docs.etherscan.io/api-endpoints/accounts#get-a-list-of-normal-transactions-by-address api tests
 
 Cypress, latest testing Framework has been used along with Cucumber and TypeScript
@@ -20,10 +21,6 @@ In order to execute scripts, simply run on:
 npm install
 npx cypress open
 It opens up a GUI. Click the feature file to execute
-You can also run all tests:
-npm run pretest (delete old reports)
-npm run test
-npm run report (produce cucumber report in cypress\test-results\html\index.html)
 ```
 
 ## Tests
