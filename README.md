@@ -21,6 +21,11 @@ In order to execute scripts, simply run on:
 npm install
 npx cypress open
 It opens up a GUI. Click the feature file to execute
+
+On command line:
+npx cypress run
+npm run report (produces HTML report in cypress/test-results folder)
+npm run pretest ( to clean up old reports)
 ```
 
 ## Tests

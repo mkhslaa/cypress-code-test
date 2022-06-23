@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.194" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-06-23T04:53:30" tests="0" file="cypress\integration\transactions-api.feature" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Etherscan Transactions REST API" timestamp="2022-06-23T04:53:30" tests="1" failures="0" time="1.194">
+    <testcase name="Etherscan Transactions REST API List of transactions" time="1.194" classname="List of transactions">
+    </testcase>
+  </testsuite>
+</testsuites>

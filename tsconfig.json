@@ -3,14 +3,18 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES6",
+    "module": "commonJS",
     "typeRoots": [
       "./typings",
       "../node_modules/@types"
     ],
     "types": [
-      "cypress"
+      "cypress",
+        "node"
     ]
   },
-  "include": ["cypress/**/*.ts", "cypress/support/dom-element/drop-downts", "cypress/plugins/indexNOTWORK", "cypress/support/action/mongo-db-actions.js"]
+  "include": ["cypress/**/*.ts"],
+  "exclude": [
+    "node_modules"
+  ]
 }
