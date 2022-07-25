@@ -1,18 +1,18 @@
 [
   {
-    "description": "  As a customer I want to see fileds displayed as well as I can do search on the home page",
+    "description": "  As a customer I want to register for a daily email updates on rental property",
     "keyword": "Feature",
-    "name": "Home Page",
+    "name": "Register for daily email updates on rental property in London",
     "line": 1,
-    "id": "home-page",
+    "id": "register-for-daily-email-updates-on-rental-property-in-london",
     "tags": [],
     "uri": "homepage.feature",
     "elements": [
       {
-        "id": "home-page;verify-home-page",
+        "id": "register-for-daily-email-updates-on-rental-property-in-london;•\tregister-for-daily-email-updates-on-rental-property-in-london",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Verify home page",
+        "name": "•\tRegister for daily email updates on rental property in London",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -20,70 +20,50 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I navigate to home page \"https://etherscan.io\"",
+            "name": "I navigate to page \"https://www.zoopla.co.uk/\"",
             "result": {
               "status": "passed",
-              "duration": 2232000000
+              "duration": 921000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "the web page is showing the title \"The Ethereum Blockchain Explorer\"",
+            "name": "I sign in",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 6622000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 7,
-            "name": "I see the non-empty market cap",
+            "name": "I navigate to page \"https://www.zoopla.co.uk/to-rent/property/wembley-park/?page_size=25&price_frequency=per_month&price_max=1000&price_min=800&view_type=list&q=Wembley%20Park%2C%20London&radius=0&results_sort=newest_listings&search_source=refine\"",
             "result": {
               "status": "passed",
-              "duration": 84000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "home-page;verify-search",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "Verify search",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 10,
-            "name": "I navigate to home page \"https://etherscan.io\"",
-            "result": {
-              "status": "passed",
-              "duration": 843000000
+              "duration": 7908000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
-            "name": "I search the wallet address \"0xddbd2b932c763ba5b1b7ae3b362eac3e8d40121a\"",
+            "line": 8,
+            "name": "I click email alert",
             "result": {
               "status": "passed",
-              "duration": 3301000000
+              "duration": 5212000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "I see more than 2 transactions",
+            "keyword": "And ",
+            "line": 9,
+            "name": "I register for the daily alert",
             "result": {
               "status": "passed",
-              "duration": 288000000
+              "duration": 10783000000
             }
           }
         ]
