@@ -1,30 +1,57 @@
-import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
+import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
+import { Selectors } from '../selectors/selectors'
+import { Constants } from '../constants/constants'
 
-Given(/^I navigate to home page "([^"]*)"/, async (uri) => {
+Given(/^I navigate to page "([^"]*)"/, async (uri) => {
   cy.visit(uri)
 })
 
-When(/^the web page is showing the title "([^"]*)"$/, async (title) => {
-  cy.get('.h4.text-white').should(
-    'contain.text',
-    'The Ethereum Blockchain Explorer'
-  )
+When(/^I click email alert$/, async () => {
+  cy.wait(2000)
+  cy.get('[data-testid=bell] > svg').click()
+  cy.wait(2000)
 })
 
-Then(/^I see the non-empty market cap$/, async () => {
-  cy.contains('Market Cap').next().should('not.be.empty')
+And(/^I register for the daily alert$/, async () => {
+  cy.wait(5000)
+  cy.get('#frequency_1').click()
 })
 
-When(/^I search the wallet address "([^"]*)"$/, async (address) => {
-  cy.get('#txtSearchInput').type(address)
-  cy.get('button[type="submit"]')
+When(/^I edit email alert$/, async () => {
+  cy.wait(2000)
+  cy.contains('Searches and alerts').click()
+  cy.get('.myaccount-alert-action').eq(0).click()
+  cy.wait(2000)
+})
+
+And(/^I register for the Instant property alert$/, async () => {
+  cy.wait(5000)
+  cy.contains('Edit saved search').click()
   cy.wait(100)
-  cy.contains('Got It').click()
-  cy.wait(100)
-  cy.contains('View all transactions').click()
+  cy.get('#frequency_0').click()
   cy.wait(1000)
 })
 
-Then(/^I see more than 2 transactions$/, async () => {
-  cy.get('.table-responsive').find('tr').should('have.length.greaterThan', 2)
+And(/^I click my zoopla$/, () => {
+  cy.wait(2000)
+  cy.contains('My Zoopla').click()
+})
+
+Then(/^I see 1 results$/, () => {
+  cy.contains('Flats for sale in Oakington Avenue, Wembley HA9').should(
+    'be.visible'
+  )
+  cy.contains('1 results').should('be.visible')
+})
+
+Then(/^I see 1 results with the garage$/, () => {
+  cy.contains('Fairway Gardens, Rownhams, Southampton SO16').should(
+    'be.visible'
+  )
+
+  cy.contains('1 results').should('be.visible')
+
+  cy.get('[data-testid="listing-price"]').click()
+  cy.contains('See full description').click()
+  cy.contains('double garage').should('be.visible')
 })

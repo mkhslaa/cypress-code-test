@@ -1,0 +1,63 @@
+[
+  {
+    "description": "  As a customer I want to register for a daily email updates on rental property",
+    "keyword": "Feature",
+    "name": "Register for daily email updates on rental property in London",
+    "line": 1,
+    "id": "register-for-daily-email-updates-on-rental-property-in-london",
+    "tags": [],
+    "uri": "search-specfic-property.feature",
+    "elements": [
+      {
+        "id": "register-for-daily-email-updates-on-rental-property-in-london;register-for-daily-email-updates-on-rental-property-in-london",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Register for daily email updates on rental property in London",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to page \"https://www.zoopla.co.uk/\"",
+            "result": {
+              "status": "passed",
+              "duration": 4340000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I sign in",
+            "result": {
+              "status": "passed",
+              "duration": 5971000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I navigate to page \"https://www.zoopla.co.uk/for-sale/flats/wembley/oakington-avenue/?page_size=25&price_max=325000&price_min=300000&property_sub_type=flats&view_type=list&q=Wayside%20Court%2C%20Oakington%20Avenue%2C%20Wembley%20HA9&radius=0&results_sort=highest_price&search_source=refine\"",
+            "result": {
+              "status": "passed",
+              "duration": 9492000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see 1 results",
+            "result": {
+              "status": "passed",
+              "duration": 330000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

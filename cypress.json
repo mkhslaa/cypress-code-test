@@ -1,14 +1,11 @@
 {
   "defalutTimeout": 10000,
-  "pageLoadTimeout": 40000,
+  "pageLoadTimeout": 80000,
   "defaultCommandTimeout": 60000,
   "requestTimeout": 150000,
   "responseTimeout": 150000,
   "testFiles": "**/*.feature",
-  "ignoreTestFiles": [
-    "*.js",
-    "*.md"
-  ],
+  "ignoreTestFiles": ["*.js", "*.md"],
   "reporter": "junit",
   "reporterOptions": {
     "mochaFile": "test-results/test-output.xml"

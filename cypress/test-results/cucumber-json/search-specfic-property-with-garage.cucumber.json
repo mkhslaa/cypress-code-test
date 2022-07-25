@@ -1,0 +1,63 @@
+[
+  {
+    "description": "  As a customer I want to register for a daily email updates on rental property",
+    "keyword": "Feature",
+    "name": "Serach specific property with garage",
+    "line": 1,
+    "id": "serach-specific-property-with-garage",
+    "tags": [],
+    "uri": "search-specfic-property-with-garage.feature",
+    "elements": [
+      {
+        "id": "serach-specific-property-with-garage;search-specific-property-with-garage",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Search specific property with garage",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to page \"https://www.zoopla.co.uk/\"",
+            "result": {
+              "status": "passed",
+              "duration": 1471000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I sign in",
+            "result": {
+              "status": "passed",
+              "duration": 5827000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I navigate to page \"https://www.zoopla.co.uk/for-sale/houses/so16/?keywords=DOUBLE%20GARAGE&page_size=25&price_max=700000&price_min=700000&property_sub_type=detached&view_type=list&q=Southampton%2C%20SO16&radius=0&results_sort=newest_listings&search_source=refine\"",
+            "result": {
+              "status": "passed",
+              "duration": 7579000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see 1 results with the garage",
+            "result": {
+              "status": "passed",
+              "duration": 4786000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

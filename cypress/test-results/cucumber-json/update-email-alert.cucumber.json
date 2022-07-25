@@ -1,0 +1,73 @@
+[
+  {
+    "description": "  As a customer I want to edit the email updates on rental property",
+    "keyword": "Feature",
+    "name": "Change the email update",
+    "line": 1,
+    "id": "change-the-email-update",
+    "tags": [],
+    "uri": "update-email-alert.feature",
+    "elements": [
+      {
+        "id": "change-the-email-update;change-the-frequency-of-an-existing-email-update",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Change the frequency of an existing email update",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to page \"https://www.zoopla.co.uk/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2999000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I sign in",
+            "result": {
+              "status": "passed",
+              "duration": 6237000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click my zoopla",
+            "result": {
+              "status": "passed",
+              "duration": 2611000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I edit email alert",
+            "result": {
+              "status": "passed",
+              "duration": 17007000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I register for the Instant property alert",
+            "result": {
+              "status": "passed",
+              "duration": 9622000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

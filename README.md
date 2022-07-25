@@ -26,7 +26,15 @@ On command line:
 npx cypress run
 npm run report (produces HTML report in cypress/test-results folder)
 npm run pretest ( to clean up old reports)
+
 ```
+## GitHub Action
+
+Actions: Generate Cypress Report is triggered on git push
+Switch to gh-pages branch
+Inside test-results folder, there is an html folder.
+Inside html folder, there is index.html that is cucumber report
+On browser, enter URL to view html cucumber report: https://htmlpreview.github.io/?https://github.com/mkhslaa/cypress-code-test/blob/gh-pages/test-results/html/index.html
 
 ## Tests
 
@@ -37,4 +45,3 @@ We have tried to avoid Page Object Pattern.
 * Develop some custom commands for many helpers
 * Remove arbitary delays
 * Upgrade to Cypress 10
-* set up cucumber report
